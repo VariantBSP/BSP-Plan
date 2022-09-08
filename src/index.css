@@ -1,0 +1,282 @@
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #f2f2f2;
+}
+body{
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+/*Navbar*/
+nav{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-content: center;
+}
+nav h1{
+  margin-left: 70px;
+  font-size: 40px;
+  color: #f2f2f2;
+}
+nav .links{
+  margin: auto;
+  margin-right: 25px;
+}
+.links a{
+  font-size: 1.2rem;
+  color: #f2f2f2;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.links button{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 500;
+  color: #f2f2f2;
+  background: transparent;
+  border: 2px solid #f2f2f2;
+}
+.links a:hover{
+  color:#1e90ff;
+}
+.links button:hover{
+  border-color: #1e90ff;
+  color: #1e90ff;
+}
+
+/* Dashboard */
+.container{
+  display: flex;
+}
+.project-list{
+  margin: 25px auto;
+  width: 40%;
+  height: 655px;
+}
+.notification{
+  margin: 25px auto;
+  width: 30%;
+  height: 364px;
+  text-align: center;
+}
+.notification .card h2{
+  margin-bottom: 40px;
+  color: #1e90ff;
+}
+.notification .card ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.notification button:hover{
+  background-color: #06b;
+}
+.notification button{
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  width: 100%;
+  background: transparent;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #06b;
+}
+.card{
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  padding: 20px;
+  padding-left: 30px;
+  border-bottom: 1px solid;
+  color: #f2f2f2;
+  margin-bottom: 20px;
+}
+.card h2{
+  margin-bottom: 2px;
+  color: #f2f2f2;
+}
+.card span{
+  color: #1e90ff;
+}
+
+/* ProjectDetails */
+.details{
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 10px auto;
+  width: 80%;
+  height: 450px;
+  padding: 20px;
+}
+.details span{
+  color: #1e90ff;
+}
+
+/* form */
+.body {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  height: 120vh;
+}
+.body-signin{
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+}
+
+.form {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 80%;
+  padding: 20px;
+  width: 50%;
+}
+
+.title {
+  color: #eee;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #eee;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0; 
+  border-bottom: 2px solid #1e90ff;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.textarea-container{
+  height: 150px;
+  position: relative;
+  width: 100%;
+}
+textarea{
+  resize: none;
+}
+.cut {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 150px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #1e90ff;
+}
+
+.submit {
+  background-color: #1e90ff;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
+
+.showPassword{
+  background-color: transparent;
+  border: 1px solid #1e90ff;
+  border-radius: 10px;
+  color: #1e90ff;
+  padding: 4px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.centre{
+  text-align: center;
+  color: #1e90ff;
+}
+
+.images{
+  display: flex;
+  margin: 20px auto;
+  max-width: 50%;
+}
+
+.images img{
+  width:100%;
+  border-radius: 50%;
+}
